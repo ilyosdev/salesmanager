@@ -4,7 +4,9 @@ import { client } from "../lib/sanity";
 import Image from "next/image";
 
 async function getData(cateogry: string) {
-  const query = `*[_type == "product" && category->name == "${cateogry}"] {
+  // capitalize the first letter of the category
+  const capitalizedCategory = cateogry.charAt(0).toUpperCase() + cateogry.slice(1);
+  const query = `*[_type == "product" && category->name == "${capitalizedCategory}"] {
         _id,
           "imageUrl": images[0].asset->url,
           price,
