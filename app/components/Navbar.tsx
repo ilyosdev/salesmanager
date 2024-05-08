@@ -7,9 +7,9 @@ import { ShoppingBag } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
 
 const links = [
-  { name: "Home", href: "/" },
-  { name: "Smartphones", href: "/Smartphone" },
-  { name: "Old Fashioned", href: "/OldFashioned" },
+  { name: "Bosh sahifa", href: "/" },
+  { name: "Telefon", href: "/Smartphone" },
+  { name: "Qurilma", href: "/Gadget" },
 ];
 
 export default function Navbar() {
